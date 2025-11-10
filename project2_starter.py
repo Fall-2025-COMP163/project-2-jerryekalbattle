@@ -258,6 +258,26 @@ class Rogue(Player):
         print(f"{self.name} performs SNEAK ATTACK on {target.name} for {damage} damage!")
         # TODO: Implement sneak attack
         # Should always do critical damage
+class Healer(Player):
+    """
+    Healer class - focuses on restoring health.
+    Inherits from Player.
+    """
+    def __init__(self, name):
+        super().__init__(name, "Healer", health=85, strength=4, magic=18)
+
+    def attack(self, target):
+        damage = self.magic - 5
+        target.take_damage(damage)
+        print(f"{self.name} uses weak holy magic on {target.name} for {damage} damage.")
+
+    def heal(self, target):
+        """
+        Special healer ability - guaranteed heals characters.
+        """
+        heal_amount = self.magic + 10
+        target.health += heal_amount
+        print(f"{self.name} performs HEAL {target.name} for {heal_amount} health!")
 
 class Weapon:
     """
@@ -292,6 +312,7 @@ if __name__ == "__main__":
     warrior = Warrior("Sir Galahad")
     mage = Mage("Merlin")
     rogue = Rogue("Robin Hood")
+    healer = Healer("Sage Mari")
     # TODO: Create one of each character type
     # warrior = Warrior("Sir Galahad")
     # mage = Mage("Merlin")
@@ -301,6 +322,7 @@ if __name__ == "__main__":
     warrior.display_stats()
     mage.display_stats()
     rogue.display_stats()
+    healer.display_stats()
     # TODO: Display their stats
     # print("\n📊 Character Stats:")
     # warrior.display_stats()
@@ -331,6 +353,7 @@ if __name__ == "__main__":
     warrior.power_strike(target1)
     mage.fireball(target2)
     rogue.sneak_attack(target3)
+    healer.heal(warrior) 
     # TODO: Test special abilities
     # print("\n✨ Testing Special Abilities:")
     # target1 = Character("Enemy1", 50, 0, 0)
