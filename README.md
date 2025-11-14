@@ -35,6 +35,7 @@ Weapon (composition - separate class)
 | Mage    | 80     | 8        | 20    | Fireball        |
 | Rogue   | 90     | 12       | 10    | Sneak Attack    |
 | Healer  | 85     | 4        | 18    | Heal            |
+
 Healer is extra class
 ## 🎮 Core Functionality
 
