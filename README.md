@@ -34,7 +34,8 @@ Weapon (composition - separate class)
 | Warrior | 120    | 15       | 5     | Power Strike    |
 | Mage    | 80     | 8        | 20    | Fireball        |
 | Rogue   | 90     | 12       | 10    | Sneak Attack    |
-
+| Healer  | 85     | 4        | 18    | Heal            |
+Healer is extra class
 ## 🎮 Core Functionality
 
 ### **All Characters Must Have:**
@@ -51,6 +52,7 @@ Weapon (composition - separate class)
 - **Warrior**: `power_strike(target)` - High damage attack
 - **Mage**: `fireball(target)` - Magic damage attack
 - **Rogue**: `sneak_attack(target)` - Critical hit attack
+- **Healer**: `heal(target)` - High Heal
 
 ### **Weapons (Composition):**
 - `Weapon(name, damage_bonus)` - Characters can HAVE weapons
