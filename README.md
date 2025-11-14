@@ -42,21 +42,22 @@ Weapon (composition - separate class)
 | Healer  | 85     | 4        | 18    | Heal            |
 
 ## 🎮 Core Functionality
--All Characters Must Implement:
-`attack(target) — Basic attack action
-`take_damage(damage) — Reduce health (not below 0)
-`display_stats() — Print formatted character info
 
--Player Class Adds:
-`character_class
-`level and experience
-`Additional attributes such as intelligence and stealth
-`Overridden display_stats() that includes player‑specific info
+### **All Characters Must Implement::**
+-`attack(target) — Basic attack action
+-`take_damage(damage) — Reduce health (not below 0)
+-`display_stats() — Print formatted character info
 
--Weapons (Composition):
-`Has name and damage_bonus
-`display_info() prints weapon details
-`Characters may have weapons
+### **Player Class Adds:**
+-`character_class
+-`level and experience
+-`Additional attributes such as intelligence and stealth
+-`Overridden display_stats() that includes player‑specific info
+
+### **Weapons (Composition):**
+-`Has name and damage_bonus
+-`display_info() prints weapon details
+-`Characters may have weapons
 
 ### **All Characters Must Have:**
 - `attack(target)` - Basic attack method
