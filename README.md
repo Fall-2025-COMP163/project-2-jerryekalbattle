@@ -37,6 +37,8 @@ Weapon (composition - separate class)
 
 ### **Extra Status:**
 
+| Class   | Health | Strength | Magic | Special Ability |
+|---------|--------|----------|-------|-----------------|
 | Healer  | 85     | 4        | 18    | Heal            |
 
 ## 🎮 Core Functionality
