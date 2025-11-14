@@ -51,11 +51,13 @@ Weapon (composition - separate class)
 `level and experience
 `Additional attributes such as intelligence and stealth
 `Overridden display_stats() that includes player‑specific info
+
 -Special Abilities:
 `Warrior: power_strike(target)
 `Mage: fireball(target)
 `Rogue: sneak_attack(target)
 `Healer (optional): heal(target)
+
 -Weapons (Composition):
 `Has name and damage_bonus
 `display_info() prints weapon details
