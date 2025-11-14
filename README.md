@@ -46,17 +46,12 @@ Weapon (composition - separate class)
 `attack(target) — Basic attack action
 `take_damage(damage) — Reduce health (not below 0)
 `display_stats() — Print formatted character info
+
 -Player Class Adds:
 `character_class
 `level and experience
 `Additional attributes such as intelligence and stealth
 `Overridden display_stats() that includes player‑specific info
-
--Special Abilities:
-`Warrior: power_strike(target)
-`Mage: fireball(target)
-`Rogue: sneak_attack(target)
-`Healer (optional): heal(target)
 
 -Weapons (Composition):
 `Has name and damage_bonus
