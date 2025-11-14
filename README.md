@@ -34,10 +34,30 @@ Weapon (composition - separate class)
 | Warrior | 120    | 15       | 5     | Power Strike    |
 | Mage    | 80     | 8        | 20    | Fireball        |
 | Rogue   | 90     | 12       | 10    | Sneak Attack    |
+
+### **Extra Status:**
+
 | Healer  | 85     | 4        | 18    | Heal            |
 
-Healer is extra class
 ## 🎮 Core Functionality
+-All Characters Must Implement:
+`attack(target) — Basic attack action
+`take_damage(damage) — Reduce health (not below 0)
+`display_stats() — Print formatted character info
+-Player Class Adds:
+`character_class
+`level and experience
+`Additional attributes such as intelligence and stealth
+`Overridden display_stats() that includes player‑specific info
+-Special Abilities:
+`Warrior: power_strike(target)
+`Mage: fireball(target)
+`Rogue: sneak_attack(target)
+`Healer (optional): heal(target)
+-Weapons (Composition):
+`Has name and damage_bonus
+`display_info() prints weapon details
+`Characters may have weapons
 
 ### **All Characters Must Have:**
 - `attack(target)` - Basic attack method
